@@ -1,0 +1,56 @@
+#banner{
+    display: flex;
+    min-width:100%;
+    overflow: hidden;
+    height: 550px;
+    position: relative;
+}
+#banner > .fa-chevron-circle-left{
+    position: absolute;
+    top: calc(50% - 21.1px);
+    left: 20px;
+    z-index: 99;
+    font-size: 42px;
+    color:#FFF100;
+    opacity: .8;
+    cursor: pointer;
+}
+#banner > .fa-chevron-circle-right{
+    position: absolute;
+    top: calc(50% - 21.1px);
+    right: 20px;
+    z-index: 99;
+    font-size: 42px;
+    color:#FFF100;
+    opacity: .8;
+    cursor: pointer;
+}
+#banner .imgslide{
+    transition: all .5s ease;
+}
+#banner .imgslide img{
+    object-fit: cover;
+    min-width:100%;
+    height: 100%;
+}
+#banner #dots{
+    position: absolute;
+    bottom:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 30px;
+    background-color: transparent;
+}
+#banner #dots > .dot{
+    border-radius:50%;
+    width:18px;
+    height: 18px;
+    color:#fff;
+    display: block;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 0 5px;
+}
