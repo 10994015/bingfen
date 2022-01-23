@@ -2,7 +2,7 @@
     display: flex;
     min-width:100%;
     overflow: hidden;
-    height: 550px;
+    height: 600px;
     position: relative;
 }
 #banner > .fa-chevron-circle-left{
@@ -11,7 +11,7 @@
     left: 20px;
     z-index: 99;
     font-size: 42px;
-    color:#FFF100;
+    color:#fff;
     opacity: .8;
     cursor: pointer;
 }
@@ -21,13 +21,43 @@
     right: 20px;
     z-index: 99;
     font-size: 42px;
-    color:#FFF100;
+    color:#fff;
     opacity: .8;
     cursor: pointer;
+}
+#banner span{
+    position: absolute;
+    top: 250px;
+    left:50%;
+    z-index: 9999;
+    color:#fff;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-weight: 600;
+    font-size: 28px;
+}
+#banner .start{
+    position: absolute;
+    top: 350px;
+    left:50%;
+    display: block;
+    width:150px;
+    height: 50px;
+    color:#fff;
+    border:gold 2px solid;
+    background-color: gold;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 8px;
+    z-index: 9999;
+    font-size: 18px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-weight: 600;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
 }
 #banner .imgslide{
     transition: all .5s ease;
 }
+
 #banner .imgslide img{
     object-fit: cover;
     min-width:100%;

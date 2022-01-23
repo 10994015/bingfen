@@ -8,11 +8,15 @@ const App = {
             {name:'關於我們',url:'###'},
             {name:'關於我們',url:'###'},
             {name:'關於我們',url:'###'},
+            {name:'關於我們',url:'###'},
+        ]);
+        const title = reactive([
+            {title:"課程規劃"},
+            {title:"人才培育"},
+            {title:"場地租借"},
         ]);
         const imglist = reactive([
             {url:'./styles/images/banner/banner1.png'},
-            {url:'./styles/images/banner/banner2.png'},
-            {url:'./styles/images/banner/banner3.png'},
         ])
         const openMenu = ref(false);
         const imgIdx = ref(0);
@@ -77,8 +81,7 @@ const App = {
         
         return {nav,
                 openMenu,
-                leftimg,
-                rightimg,
+                title,
                 handopenMenu,
                 rightimg,
                 leftimg,
