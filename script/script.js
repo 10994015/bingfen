@@ -4,12 +4,13 @@ const App = {
         const lorem = ref(`Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sapiente sequi rem maxime aliquid quod adipisci odit! Iusto, doloribus. Quo sed ratione dolorum dolores amet hic harum, eius aperiam aut.
         Odit eaque inventore quae molestiae unde et quis numquam natus harum, voluptas ipsum quibusdam necessitatibus, deserunt modi consectetur sequi ut nulla mollitia. Laboriosam, sapiente quisquam incidunt quam quod laborum animi.`);
         const nav = reactive([
+            {name:'首頁',url:'###'},
             {name:'關於我們',url:'###'},
-            {name:'關於我們',url:'###'},
-            {name:'關於我們',url:'###'},
-            {name:'關於我們',url:'###'},
-            {name:'關於我們',url:'###'},
-            {name:'關於我們',url:'###'},
+            {name:'課程規劃',url:'###'},
+            {name:'人才培育',url:'###'},
+            {name:'場地租借',url:'###'},
+            {name:'立即註冊',url:'###'},
+            {name:'聯絡我們',url:'###'},
         ]);
         const title = reactive([
             {title:"幫助您進行課程規劃"},
