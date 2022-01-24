@@ -194,3 +194,59 @@
         }
     }
 }
+section{
+    margin: 50px 0;
+    h1{
+        width:100%;
+        text-align: center;
+        color:#1484c4;
+        margin:30px 0;
+        font-size: 30px;
+    }
+}
+#course{
+    > h1{
+        width:100%;
+        text-align: center;
+        color:#1484c4;
+        margin:30px 0;
+        font-size: 30px;
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width:960px){
+            flex-direction: column;
+        }
+        > img{
+            margin: 10px 50px;
+            width:450px;
+        }
+        .contentText{
+            font-family: '微軟正黑體';
+            margin: 10px 50px;
+            h2{
+                font-size: 24px;
+                color:#2014c4;
+                margin-bottom: 15px;
+            }
+            p{
+                width:400px;
+            }
+        }
+    }
+}
+
+#nurture{
+    .content{
+        .contentText{
+            width:600px;
+            margin:auto;
+            font-family: "微軟正黑體";
+            h2{
+                color:#1484c4;
+            }
+        }
+    }
+}

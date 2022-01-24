@@ -11,7 +11,7 @@ const App = {
             {name:'關於我們',url:'###'},
         ]);
         const title = reactive([
-            {title:"課程規劃"},
+            {title:"幫助您進行課程規劃"},
             {title:"人才培育"},
             {title:"場地租借"},
         ]);
