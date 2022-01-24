@@ -1,7 +1,8 @@
 const {ref, reactive, onMounted} = Vue;
 const App = {
     setup(){
-        
+        const lorem = ref(`Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sapiente sequi rem maxime aliquid quod adipisci odit! Iusto, doloribus. Quo sed ratione dolorum dolores amet hic harum, eius aperiam aut.
+        Odit eaque inventore quae molestiae unde et quis numquam natus harum, voluptas ipsum quibusdam necessitatibus, deserunt modi consectetur sequi ut nulla mollitia. Laboriosam, sapiente quisquam incidunt quam quod laborum animi.`);
         const nav = reactive([
             {name:'關於我們',url:'###'},
             {name:'關於我們',url:'###'},
@@ -16,7 +17,19 @@ const App = {
             {title:"場地租借"},
         ]);
         const imglist = reactive([
-            {url:'./styles/images/banner/banner1.png'},
+            {url:'./styles/images/banner.jpg'},
+        ])
+        const stepItem = reactive([
+            {class:'fas fa-user-graduate',text:'大學以上學歷',rightopen:true},
+            {class:'fas fa-glasses',text:'參加培訓課程',rightopen:true},
+            {class:'far fa-building',text:'參加見習',rightopen:true},
+            {class:'fas fa-stamp',text:'取得證明',rightopen:true},
+            {class:'fas fa-chalkboard-teacher',text:'成為專業教師',rightopen:false},
+        ])
+        const siteItem = reactive([
+            {img:"./styles/images/a.jpg",title:"冰芬美語"},
+            {img:"./styles/images/b.jpg",title:"約翰小學"},
+            {img:"./styles/images/c.jpg",title:"卡爾中學"},
         ])
         const openMenu = ref(false);
         const imgIdx = ref(0);
@@ -80,6 +93,7 @@ const App = {
 
         
         return {nav,
+                lorem,
                 openMenu,
                 title,
                 handopenMenu,
@@ -87,7 +101,9 @@ const App = {
                 leftimg,
                 imglist,
                 dotsHtml,
-                handDot};
+                handDot,
+                stepItem,
+                siteItem,};
                 
     }
 };

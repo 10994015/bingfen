@@ -18,17 +18,15 @@
             </ul>
         </header>
         <div id="banner">
-            <i class="fas fa-chevron-circle-left" @click="leftimg"></i>
-            <i class="fas fa-chevron-circle-right" @click="rightimg"></i>
-            <span>讓遠距教學零距離<br>
-                低延遲、高穩定的線上教學系統</span>
+            <!-- <i class="fas fa-chevron-circle-left" @click="leftimg"></i>
+            <i class="fas fa-chevron-circle-right" @click="rightimg"></i> -->
+            <span>以互動參與感為原則，透過多元教學經驗<br>
+                讓學習更多 "冰芬" 色彩</span>
             <a href="###" class="start">立即開始</a>
             <a href="###" class="imgslide" v-for="item in imglist" :key="item.url">
                 <img :src="item.url" alt="">
             </a>
-            <div id="dots" v-html="dotsHtml">
-               
-            </div>
+            <!-- <div id="dots" v-html="dotsHtml"></div> -->
         </div>
         <section id="course">
             <h1>{{title[0].title}}</h1>
@@ -36,9 +34,7 @@
                 <img src="./styles/images/pic01.png" alt="">
                 <div class="contentText">
                     <h2>實現孩子的夢想</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta tempora quisquam molestias eius deserunt dolore provident similique, atque pariatur quibusdam ea iure? Dolore ut corporis nostrum quam, officiis tenetur ad!
-                    Distinctio adipisci dicta, quas eveniet sunt atque pariatur dolorum natus placeat dolorem id ullam recusandae in, ab rerum nihil deleniti perferendis sequi culpa incidunt illo. Ipsum necessitatibus amet repellendus facere.
-                    Reprehenderit error magni in rerum nobis? Magnam rem ipsum odit nemo autem corporis tempora velit eaque fuga voluptate culpa labore doloribus veniam, quas fugit magni obcaecati. Assumenda harum soluta voluptate.</p>
+                    <p>{{lorem}}</p>
                 </div>
             </div>
         </section>
@@ -47,12 +43,46 @@
             <div class="content">
                 <div class="contentText">
                     <h2>專業派師</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sapiente sequi rem maxime aliquid quod adipisci odit! Iusto, doloribus. Quo sed ratione dolorum dolores amet hic harum, eius aperiam aut.
-                    Odit eaque inventore quae molestiae unde et quis numquam natus harum, voluptas ipsum quibusdam necessitatibus, deserunt modi consectetur sequi ut nulla mollitia. Laboriosam, sapiente quisquam incidunt quam quod laborum animi.
-                    Quos magni illum ex eligendi unde, cupiditate commodi, soluta animi non libero quis perferendis a officia maiores consequuntur deleniti, aut provident impedit autem eius saepe aspernatur! Qui illum ducimus enim?</p>
+                    <p>{{lorem}}</p>
                 </div>
-            </div>
+                <div class="step">
+                    <div class="stepItem" v-for="item in stepItem" :key="item.text">
+                        <div>
+                            <i :class="item.class"></i>
+                            <p>{{item.text}}</p>
+                        </div>
+                        <i class="fas fa-long-arrow-alt-right" v-show="item.rightopen"></i>
+                   </div>
+                   
+                </div>
+                </div>
         </section>
+
+        <section id="site">
+            <h1>{{title[2].title}}</h1>
+            <div class="content">
+                <div class="siteItem" v-for="item in siteItem" :key="item.title">
+                    <div class="imgBox"><img :src="item.img" alt=""></div>
+                    <h2>{{item.title}}</h2>
+                </div>
+              
+            </div>
+            <a href="###" class="seemore">SEE MORE</a>
+        </section>
+
+        <section id="start">
+           <div>
+                <h1>Want to try it now?</h1>
+                <a href="###" class="startBtn">START</a>
+           </div>
+           <div>
+               <img src="./styles/images/start.jpg" alt="">
+           </div>
+        </section>
+
+        <footer>
+            footer
+        </footer>
     </div>
    
 
