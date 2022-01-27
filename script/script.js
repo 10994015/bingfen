@@ -9,7 +9,6 @@ const App = {
             {name:'課程規劃',url:'###'},
             {name:'人才培育',url:'###'},
             {name:'場地租借',url:'###'},
-            {name:'立即註冊',url:'###'},
             {name:'聯絡我們',url:'###'},
         ]);
         const title = reactive([
